@@ -1,0 +1,673 @@
+<!DOCTYPE html><html lang="id" class="scroll-smooth"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:,">
+  <title>GENarta Collection — Karya Penuh Cerita, Hadiah Penuh Makna</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'warm-cream': '#F5F0E6',
+        'terracotta': '#B86F50',
+        'sage-green': '#8A9675',
+        'earthy-brown': '#554538',
+        'soft-beige': '#DDD0BD',
+        'primary': '#8E4D31',
+        'on-primary': '#FFFFFF',
+        'primary-container': '#FFDBCD',
+        'on-primary-container': '#360F00',
+        'secondary': '#404A2F',
+        'on-secondary': '#FFFFFF',
+        'secondary-container': '#DBE7C2',
+        'on-secondary-container': '#151E07',
+        'tertiary': '#554538',
+        'on-tertiary': '#FFFFFF',
+        'tertiary-container': '#DDD0BD',
+        'on-tertiary-container': '#25190E',
+        'surface': '#F5F0E6',
+        'surface-container-lowest': '#FFFBFF',
+        'surface-container-low': '#EFE9DD',
+        'surface-container': '#E7E2D8',
+        'surface-container-high': '#DDD0BD',
+        'on-surface': '#25190E',
+        'on-surface-variant': '#554538',
+        'outline': '#867465',
+        'outline-variant': '#CAC6BD',
+        'error': '#BA1A1A',
+        'on-error': '#FFFFFF',
+      },
+      borderRadius: {
+        'sm': '6px',
+        'DEFAULT': '12px',
+        'md': '16px',
+        'lg': '24px',
+        'xl': '32px',
+        'full': '9999px',
+      },
+      spacing: {
+        'gutter-xs': '4px',
+        'gutter-sm': '8px',
+        'gutter-md': '16px',
+        'gutter-lg': '24px',
+        'gutter-xl': '32px',
+        'section-sm': '48px',
+        'section-lg': '80px',
+        'page-margin': '24px',
+      },
+      fontFamily: {
+        'display': ['"Playfair"', 'sans-serif'],
+        'headline': ['"Playfair"', 'sans-serif'],
+        'title': ['"Playfair"', 'sans-serif'],
+        'body': ['"Poppins"', 'sans-serif'],
+        'label': ['"Poppins"', 'sans-serif'],
+        'mono': ['"Red Hat Mono"', 'monospace'],
+      },
+      fontSize: {
+        'display-lg': ['56px', { lineHeight: '62px', letterSpacing: '-0.5px', fontWeight: '600' }],
+        'display-lg-mobile': ['32px', { lineHeight: '38px', letterSpacing: '-0.25px', fontWeight: '600' }],
+        'display-md': ['44px', { lineHeight: '50px', letterSpacing: '-0.25px', fontWeight: '600' }],
+        'display-md-mobile': ['28px', { lineHeight: '34px', letterSpacing: '0px', fontWeight: '600' }],
+        'headline-lg': ['36px', { lineHeight: '44px', letterSpacing: '-0.25px', fontWeight: '600' }],
+        'headline-lg-mobile': ['26px', { lineHeight: '32px', letterSpacing: '0px', fontWeight: '600' }],
+        'headline-md': ['28px', { lineHeight: '36px', letterSpacing: '0px', fontWeight: '500' }],
+        'title-lg': ['22px', { lineHeight: '28px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-md': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '600' }],
+        'body-lg': ['16px', { lineHeight: '26px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-md': ['14px', { lineHeight: '22px', letterSpacing: '0px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.1px', fontWeight: '500' }],
+        'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.25px', fontWeight: '500' }],
+        'mono-md': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '500' }],
+      },
+      transitionDuration: {
+        'state-change': '180ms',
+        'surface-enter': '300ms',
+        'surface-exit': '200ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+        'surface-enter': '0ms',
+        'surface-exit': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'ease-out',
+        'surface-enter': 'cubic-bezier(0.2, 0, 0, 1)',
+        'surface-exit': 'cubic-bezier(0.3, 0, 1, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,400..700;1,5..1200,400..700&amp;family=Poppins:wght@400;500;600&amp;family=Red+Hat+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body data-page="beranda" class="bg-surface text-on-surface font-body antialiased selection:bg-primary-container selection:text-on-primary-container">
+  <a href="#main-content" class="skip-link">Lewati ke konten utama</a>
+  <div class="min-h-screen flex flex-col" data-stitch-vh="min-h-screen">
+
+    <!-- 1. NAVIGATION BAR -->
+    <header class="site-header sticky top-0 z-30 bg-surface border-b border-outline-variant">
+      <div class="max-w-7xl mx-auto px-page-margin h-20 flex items-center justify-between gap-gutter-md">
+        <a href="#beranda" class="flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded" aria-label="GENarta Collection — ke beranda">
+          <img src="assets/gambar/logo.png" alt="GENarta Collection" class="h-11 sm:h-14 w-auto max-w-[200px] object-contain mix-blend-multiply">
+        </a>
+
+        <nav aria-label="Navigasi Utama" class="hidden lg:flex items-center gap-gutter-xl">
+          <a href="#beranda" class="nav-link font-label text-label-lg text-on-surface-variant hover:text-primary transition-colors duration-state-change py-1" aria-current="page" data-nav="beranda" data-design-text-token="label-lg">Beranda</a>
+          <a href="#koleksi" class="nav-link font-label text-label-lg text-on-surface-variant hover:text-primary transition-colors duration-state-change py-1" data-nav="koleksi" data-design-text-token="label-lg">Koleksi</a>
+          <a href="#cerita-kami" class="nav-link font-label text-label-lg text-on-surface-variant hover:text-primary transition-colors duration-state-change py-1" data-nav="cerita-kami" data-design-text-token="label-lg">Cerita Kami</a>
+          <a href="#galeri" class="nav-link font-label text-label-lg text-on-surface-variant hover:text-primary transition-colors duration-state-change py-1" data-nav="galeri" data-design-text-token="label-lg">Galeri</a>
+          <a href="#kontak" class="nav-link font-label text-label-lg text-on-surface-variant hover:text-primary transition-colors duration-state-change py-1" data-nav="kontak" data-design-text-token="label-lg">Kontak</a>
+        </nav>
+
+        <div class="flex items-center gap-gutter-sm">
+          <!-- COMPONENT: button-primary -->
+          <a href="konsultasi-custom.html" data-component-id="button-primary" data-component-type="button" data-component-variant="primary" class="hidden sm:inline-flex items-center justify-center gap-gutter-sm px-gutter-lg py-3 rounded-full bg-primary text-on-primary font-label text-label-lg transition-colors duration-state-change ease-state-change hover:bg-earthy-brown focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-surface">
+            <span data-design-text-token="label-lg">Konsultasi Custom</span>
+          </a>
+
+          <!-- Mobile menu toggle -->
+          <button id="mobile-menu-btn" data-component-id="button-icon" data-component-type="button" data-component-variant="icon" type="button" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="mobile-menu" class="menu-toggle lg:hidden inline-flex items-center justify-center w-11 h-11 rounded-full bg-surface-container-low text-on-surface border border-outline-variant transition-colors duration-state-change hover:bg-surface-container-high">
+            <span class="material-symbols-outlined text-[22px] icon-menu" aria-hidden="true">menu</span>
+            <span class="material-symbols-outlined text-[22px] icon-close" aria-hidden="true">close</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div id="mobile-menu" class="hidden lg:hidden bg-surface-container-low border-t border-outline-variant px-page-margin py-gutter-lg">
+        <nav aria-label="Navigasi Mobile" class="flex flex-col gap-gutter-md">
+          <a href="#beranda" class="nav-link font-label text-label-lg text-on-surface-variant py-1" aria-current="page" data-nav="beranda" data-design-text-token="label-lg">Beranda</a>
+          <a href="#koleksi" class="nav-link font-label text-label-lg text-on-surface-variant py-1" data-nav="koleksi" data-design-text-token="label-lg">Koleksi</a>
+          <a href="#cerita-kami" class="nav-link font-label text-label-lg text-on-surface-variant py-1" data-nav="cerita-kami" data-design-text-token="label-lg">Cerita Kami</a>
+          <a href="#galeri" class="nav-link font-label text-label-lg text-on-surface-variant py-1" data-nav="galeri" data-design-text-token="label-lg">Galeri</a>
+          <a href="#kontak" class="nav-link font-label text-label-lg text-on-surface-variant py-1" data-nav="kontak" data-design-text-token="label-lg">Kontak</a>
+          <a href="konsultasi-custom.html" class="inline-flex items-center justify-center px-gutter-lg py-3 rounded-full bg-primary text-on-primary font-label text-label-lg mt-2" data-design-text-token="label-lg">Konsultasi Custom</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="flex-1">
+
+      <!-- 2. HERO SECTION -->
+      <section id="beranda" class="py-section-sm md:py-section-lg overflow-hidden">
+        <div class="max-w-7xl mx-auto px-page-margin grid grid-cols-1 lg:grid-cols-12 gap-gutter-xl items-center">
+          <div class="lg:col-span-6 flex flex-col gap-gutter-lg">
+            <span class="inline-flex self-start items-center gap-gutter-xs px-3.5 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label text-label-md" data-design-text-token="label-md">
+              <span class="material-symbols-outlined text-[16px]" aria-hidden="true">spa</span>
+              Studio Kreasi Handmade &amp; Hadiah Personal
+            </span>
+
+            <!-- COMPONENT: typography-display -->
+            <h1 data-component-id="typography-display" data-component-type="typography" data-component-variant="display" data-design-text-token="display-lg" class="font-display text-display-md-mobile md:text-display-md lg:text-display-lg text-on-surface text-balance">
+              Karya Penuh Cerita, Hadiah Penuh Makna.
+            </h1>
+
+            <!-- COMPONENT: typography-body -->
+            <p data-component-id="typography-body" data-component-type="typography" data-component-variant="body" data-design-text-token="body-lg" class="font-body text-body-lg text-on-surface-variant text-pretty max-w-prose">
+              Temukan berbagai kreasi handmade, batik, hampers dan produk custom yang menghadirkan sentuhan berbeda untuk setiap momen.
+            </p>
+
+            <div class="flex flex-wrap items-center gap-gutter-md pt-gutter-xs">
+              <!-- COMPONENT: button-primary -->
+              <a href="#karya-unggulan" data-component-id="button-primary" data-component-type="button" data-component-variant="primary" class="inline-flex items-center justify-center gap-gutter-sm px-gutter-lg py-3 rounded-full bg-primary text-on-primary font-label text-label-lg transition-colors duration-state-change ease-state-change hover:bg-earthy-brown focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-surface">
+                <span data-design-text-token="label-lg">Jelajahi Koleksi</span>
+                <span class="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_downward</span>
+              </a>
+
+              <!-- COMPONENT: button-secondary -->
+              <a href="konsultasi-custom.html" data-component-id="button-secondary" data-component-type="button" data-component-variant="secondary" class="inline-flex items-center justify-center gap-gutter-sm px-gutter-lg py-3 rounded-full border border-earthy-brown text-earthy-brown bg-transparent font-label text-label-lg transition-colors duration-state-change ease-state-change hover:bg-surface-container-high focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-earthy-brown focus-visible:ring-offset-2 focus-visible:ring-offset-surface">
+                <span data-design-text-token="label-lg">Buat Pesanan Custom</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 relative">
+            <div class="relative rounded-lg overflow-hidden bg-soft-beige border border-outline-variant p-2">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrC_WCp5a-eDA78KGDxTIowbidQvFBRfwKPrfgHkRo1mA9YHaZsxVYs4WZBmMGqPSgHlAQZ9DH3mNWYvIUfM0NxtDmdEpYy6HEjwHPZeJcQV9KXm28jwMwaCWwgFBBXgrD-YbCJhFLdj4j7sX0M8Lbz9KGCQ-v9bzcd0T6lZqQrzDx_BzOu3lndTeOSde8AyT3hO8q6qbhpmKqHO0gOppsSzdsISdzHqnYGM6nfTruF1AYytESpCx19Q7O_MU_U" alt="Meja studio GENarta Collection berisi kerajinan tangan, kain batik, kotak decoupage, dan rangkaian bunga kering" class="w-full aspect-[4/3] lg:aspect-[6/5] object-cover rounded-md">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. OUR COLLECTIONS -->
+      <section id="koleksi" class="py-section-sm md:py-section-lg bg-surface-container-low border-y border-outline-variant">
+        <div class="max-w-7xl mx-auto px-page-margin">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-end mb-section-sm">
+            <div class="lg:col-span-7 flex flex-col gap-gutter-sm">
+              <span class="font-label text-label-md text-primary uppercase tracking-wider" data-design-text-token="label-md">Koleksi Kurasi</span>
+              <h2 class="font-headline text-headline-lg-mobile md:text-headline-lg text-on-surface text-balance" data-design-text-token="headline-lg">
+                Empat Ruang Kreasi untuk Berbagai Momen
+              </h2>
+            </div>
+            <p class="lg:col-span-5 font-body text-body-md text-on-surface-variant text-pretty" data-design-text-token="body-md">
+              Setiap kategori menghadirkan perpaduan material alami, detail pengerjaan tangan, dan estetika hangat yang dapat disesuaikan.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter-lg">
+            <!-- Collection 1: Handmade & Kerajinan (Large asymmetric left) -->
+            <article class="md:col-span-7 bg-surface border border-outline-variant rounded-xl overflow-hidden flex flex-col">
+              <div class="p-3 pb-0">
+                <img src="https://lh3.googleusercontent.com/aida/ALJJyrDpAQebbsZbVQcMZkZ0Vl_7hFQkikg57OURBmdh3USl9YotSagslSVc9LYXt4KYI73o0rpJJLxhYKmfvxfpNskPWgLhtmcnXS_wJuEJURvyzFQroFuUgPSgfksp1A-quw7zITbsnq3FE34gRwtFuKv12q68GAxphjd-kCRgGNxgD0I5eFq8ny-4l2JCXr0r-Lj_PjVsbVvUZhrcDxOSokqEsCMHoc4vb2QTS2OubgHdXZYZzXHHR_iCSe1Gn3o" alt="Koleksi Handmade dan Kerajinan GENarta Collection" class="w-full aspect-[16/10] object-cover rounded-lg">
+              </div>
+              <div class="p-gutter-lg flex flex-col sm:flex-row sm:items-end justify-between gap-gutter-md flex-1">
+                <div class="flex flex-col gap-gutter-xs max-w-md">
+                  <h3 class="font-headline text-headline-md text-on-surface" data-design-text-token="headline-md">Handmade &amp; Kerajinan</h3>
+                  <p class="font-body text-body-md text-on-surface-variant text-pretty" data-design-text-token="body-md">
+                    Benda dekoratif, anyaman, dan aksesori rumah yang dikerjakan dengan ketelitian tangan untuk menghadirkan kehangatan ruang.
+                  </p>
+                </div>
+                <a href="#karya-unggulan" data-filter-link="Handmade &amp; Kerajinan" class="inline-flex items-center gap-gutter-xs font-label text-label-lg text-primary hover:text-earthy-brown shrink-0" data-design-text-token="label-lg">
+                  <span>Lihat Karya</span>
+                  <span class="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Collection 2: Batik & Decoupage (Portrait arch right) -->
+            <article class="md:col-span-5 bg-surface border border-outline-variant rounded-xl overflow-hidden flex flex-col">
+              <div class="p-3 pb-0">
+                <img src="https://lh3.googleusercontent.com/aida/ALJJyrBDEsAaoiwdkMsinfjBkH975NzPtfQMgKgGEFBrNpJCvykhay-IDZTPaoxEVeFWSTaoUwMORhhRMr5Yk1-TPsHkLkTBCmrpRawxMCIRtNZP1DdMHo0hhtdXh8V2XZikUcbiiFvIVqRcTNgRxRswzWUSOoZKS3ecpCCRkK53EIiemu4EbCQq9l18-qXXOGzBODQGw80BOBS7batRh55OX5DK9mgG3xuQfinRygti2LnYYYAZJRCP2uYwoWDOobQkKNlmfSiz" alt="Koleksi Batik dan Decoupage GENarta Collection" class="w-full aspect-[4/3] object-cover rounded-t-full rounded-b-lg">
+              </div>
+              <div class="p-gutter-lg flex flex-col justify-between gap-gutter-md flex-1">
+                <div class="flex flex-col gap-gutter-xs">
+                  <h3 class="font-headline text-headline-md text-on-surface" data-design-text-token="headline-md">Batik &amp; Decoupage</h3>
+                  <p class="font-body text-body-md text-on-surface-variant text-pretty" data-design-text-token="body-md">
+                    Harmoni motif wastra Nusantara dengan teknik seni tempel decoupage pada kotak simpan, wadah, dan benda fungsional.
+                  </p>
+                </div>
+                <a href="#karya-unggulan" data-filter-link="Batik &amp; Decoupage" class="inline-flex items-center gap-gutter-xs font-label text-label-lg text-primary hover:text-earthy-brown self-start" data-design-text-token="label-lg">
+                  <span>Lihat Karya</span>
+                  <span class="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Collection 3: Hampers & Hadiah (Soft beige framed card) -->
+            <article class="md:col-span-5 bg-surface-container-high border border-outline-variant rounded-xl overflow-hidden flex flex-col">
+              <div class="p-3 pb-0">
+                <img src="https://lh3.googleusercontent.com/aida/ALJJyrAolDd5oIwIhzzjJAKnlQ7KCFkSKb_C8CA-js9yA1rtyzK0GJqUlmNt5UHfar-hGKcPF3_1Sn9WN7GdOjRjiYRIaSdPke7APzsqTmKAZ_74mwXqYbShkcsz-ulP2M9UWVqKq9K0Vejv6oHIxAxwPGlPesiMkGiZFIjTGY614AfNwU0eY5c-CJcHaQueqK-OkfhzPJUchCEhVCHgXzyeY-2gH1UgBSAGBocnZBc8PF7MQoD0Nb9KWGSqVS6LhA" alt="Koleksi Hampers dan Hadiah GENarta Collection" class="w-full aspect-[4/3] object-cover rounded-lg">
+              </div>
+              <div class="p-gutter-lg flex flex-col justify-between gap-gutter-md flex-1">
+                <div class="flex flex-col gap-gutter-xs">
+                  <h3 class="font-headline text-headline-md text-on-surface" data-design-text-token="headline-md">Hampers &amp; Hadiah</h3>
+                  <p class="font-body text-body-md text-on-surface-variant text-pretty" data-design-text-token="body-md">
+                    Bingkisan terkurasi dengan kemasan estetik dan kartu ucapan personal untuk perayaan hari raya, syukuran, maupun apresiasi.
+                  </p>
+                </div>
+                <a href="#karya-unggulan" data-filter-link="Hampers &amp; Hadiah" class="inline-flex items-center gap-gutter-xs font-label text-label-lg text-earthy-brown hover:text-primary self-start" data-design-text-token="label-lg">
+                  <span>Lihat Karya</span>
+                  <span class="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Collection 4: Buket & Hantaran (Wide editorial right) -->
+            <article class="md:col-span-7 bg-surface border border-outline-variant rounded-xl overflow-hidden flex flex-col">
+              <div class="p-3 pb-0">
+                <img src="https://lh3.googleusercontent.com/aida/ALJJyrDyfqCqGfFD7UB58yg3ujuUFjE0PeIcP0jxzRERyDvZ_RoJRPEgeRnsu_LVNVsZj4V7p1qTRFMRKzujku7WTVdd-vwaDEVnqbSHQr7qxh0-PE35hwhI6bIQjOzI6pE9U83uxdRPWVkn2jncRFknpWM8AH6nIaYwekraeVxd6c9c9DZ5jD7yh4njz1queof0zoQO2QrOdOrVKXwlkHY9cTv-yBkdj4oVOwBonomh8LHoZQMu65kVN1Re6o9HtptNeGutWXs" alt="Koleksi Buket dan Hantaran GENarta Collection" class="w-full aspect-[16/10] object-cover rounded-lg">
+              </div>
+              <div class="p-gutter-lg flex flex-col sm:flex-row sm:items-end justify-between gap-gutter-md flex-1">
+                <div class="flex flex-col gap-gutter-xs max-w-md">
+                  <h3 class="font-headline text-headline-md text-on-surface" data-design-text-token="headline-md">Buket &amp; Hantaran</h3>
+                  <p class="font-body text-body-md text-on-surface-variant text-pretty" data-design-text-token="body-md">
+                    Rangkaian buket bunga kering dan penataan hantaran lamaran atau pernikahan yang elegan, rapi, dan selaras dengan tema acara.
+                  </p>
+                </div>
+                <a href="#karya-unggulan" data-filter-link="Buket &amp; Hantaran" class="inline-flex items-center gap-gutter-xs font-label text-label-lg text-primary hover:text-earthy-brown shrink-0" data-design-text-token="label-lg">
+                  <span>Lihat Karya</span>
+                  <span class="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. FEATURED CREATIONS (With Category Filtering) -->
+      <section id="karya-unggulan" class="py-section-sm md:py-section-lg">
+        <div class="max-w-7xl mx-auto px-page-margin">
+          <div class="flex flex-col gap-gutter-lg mb-gutter-xl">
+            <div class="flex flex-col gap-gutter-sm">
+              <span class="font-label text-label-md text-primary uppercase tracking-wider" data-design-text-token="label-md">Karya Unggulan</span>
+              <h2 class="font-headline text-headline-lg-mobile md:text-headline-lg text-on-surface text-balance" data-design-text-token="headline-lg">
+                Pilihan Kreasi Tangan Kami
+              </h2>
+              <p class="font-body text-body-md text-on-surface-variant text-pretty" data-design-text-token="body-md">Data produk di bawah ini adalah contoh untuk pratinjau dan dapat diganti dengan data asli.</p>
+            </div>
+
+            <!-- Category Filter Chips -->
+            <div class="flex flex-wrap items-center gap-gutter-sm" role="group" aria-label="Filter Kategori Produk">
+              <button type="button" data-filter="Semua" data-component-id="chip-filter-active" data-component-type="chip" data-component-variant="filter" aria-pressed="true" class="filter-chip inline-flex items-center px-gutter-md py-2 rounded-full bg-earthy-brown text-on-tertiary font-label text-label-lg transition-colors duration-state-change">
+                <span data-design-text-token="label-lg">Semua</span>
+              </button>
+              <button type="button" data-filter="Handmade &amp; Kerajinan" data-component-id="chip-action" data-component-type="chip" data-component-variant="filter" aria-pressed="false" class="filter-chip inline-flex items-center px-gutter-md py-2 rounded-full bg-surface-container-low border border-outline-variant text-on-surface-variant font-label text-label-lg transition-colors duration-state-change hover:bg-surface-container-high">
+                <span data-design-text-token="label-lg">Handmade &amp; Kerajinan</span>
+              </button>
+              <button type="button" data-filter="Batik &amp; Decoupage" data-component-id="chip-action" data-component-type="chip" data-component-variant="filter" aria-pressed="false" class="filter-chip inline-flex items-center px-gutter-md py-2 rounded-full bg-surface-container-low border border-outline-variant text-on-surface-variant font-label text-label-lg transition-colors duration-state-change hover:bg-surface-container-high">
+                <span data-design-text-token="label-lg">Batik &amp; Decoupage</span>
+              </button>
+              <button type="button" data-filter="Hampers &amp; Hadiah" data-component-id="chip-action" data-component-type="chip" data-component-variant="filter" aria-pressed="false" class="filter-chip inline-flex items-center px-gutter-md py-2 rounded-full bg-surface-container-low border border-outline-variant text-on-surface-variant font-label text-label-lg transition-colors duration-state-change hover:bg-surface-container-high">
+                <span data-design-text-token="label-lg">Hampers &amp; Hadiah</span>
+              </button>
+              <button type="button" data-filter="Buket &amp; Hantaran" data-component-id="chip-action" data-component-type="chip" data-component-variant="filter" aria-pressed="false" class="filter-chip inline-flex items-center px-gutter-md py-2 rounded-full bg-surface-container-low border border-outline-variant text-on-surface-variant font-label text-label-lg transition-colors duration-state-change hover:bg-surface-container-high">
+                <span data-design-text-token="label-lg">Buket &amp; Hantaran</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Product Grid -->
+          <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-lg items-stretch">
+            <!-- Product Card 1 -->
+            <article data-category="Batik &amp; Decoupage" data-component-id="card-action" data-component-type="card" data-component-variant="action" class="product-card bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden flex flex-col h-full transition-shadow duration-state-change ease-state-change hover:shadow-[0_14px_30px_-24px_rgba(37,25,14,0.35)]">
+              <div class="aspect-square w-full bg-surface-container overflow-hidden">
+                <img src="https://lh3.googleusercontent.com/aida/ALJJyrCUt8Ve3Rmt4GMWTcwS4nD8RHICaDdBpagw3Y8S2JPuxrD7IIXau20pZYoXa_-ZPk2qzUlyaerRBLlspWVR2uJWmW48C-msmnpdEyvGEXE6MQV7uTkR-Ns-LGx0EzGqxjI4gGTmnjI8ttQ9REcbRD0Ub_C52oo-HCuR8KqxdZ4iYhSG8w6Dw7ZHU_QTTgQFXvmjFqz_fho2nZs6IoZ0E28PxYbPr5NvYlhSZBAMZhCyYlif9ndU1eQ22rU1" alt="Kotak Kenang Decoupage Batik" class="w-full h-full object-cover">
+              </div>
+              <div class="p-gutter-lg flex flex-col flex-1 gap-gutter-sm">
+                <header class="flex flex-col gap-gutter-xs">
+                  <span class="inline-flex self-start px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label text-label-md" data-design-text-token="label-md">Batik &amp; Decoupage</span>
+                  <h3 class="font-title text-title-lg text-on-surface" data-design-text-token="title-lg">Kotak Kenang Decoupage Batik</h3>
+                </header>
+                <p class="font-body text-body-md text-on-surface-variant text-pretty flex-1" data-design-text-token="body-md">
+                  Kotak kayu berlapis motif batik dengan teknik decoupage dan sentuhan akhir natural. Cocok untuk menyimpan surat, cinderamata, atau kenang-kenangan kecil.
+                </p>
+                <footer class="pt-gutter-sm border-t border-outline-variant/60 flex flex-col gap-gutter-sm">
+                  <span class="font-mono text-mono-md text-earthy-brown tabular-nums" data-design-text-token="mono-md">Rp 185.000</span>
+                  <a href="detail-produk.html" data-component-id="button-tertiary" data-component-type="button" data-component-variant="tertiary" class="w-full inline-flex items-center justify-center gap-gutter-xs px-gutter-md py-2 rounded-full bg-surface-container-low text-primary font-label text-label-lg transition-colors duration-state-change hover:bg-primary-container">
+                    <span data-design-text-token="label-lg">Lihat Detail</span>
+                    <span class="material-symbols-outlined text-[16px]" aria-hidden="true">arrow_forward</span>
+                  </a>
+                </footer>
+              </div>
+            </article>
+
+            <!-- Product Card 2 -->
+            <article data-category="Hampers &amp; Hadiah" data-component-id="card-action" data-component-type="card" data-component-variant="action" class="product-card bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden flex flex-col h-full transition-shadow duration-state-change ease-state-change hover:shadow-[0_14px_30px_-24px_rgba(37,25,14,0.35)]">
+              <div class="aspect-square w-full bg-surface-container overflow-hidden">
+                <img src="https://lh3.googleusercontent.com/aida/ALJJyrBcvj-m1mBBbH4uE3p9qqForbawNVzAM3L_2aVDKE0JliMj868-xujUhEWfVuOnwjIYSFpAdVgWutCt5JEWbPys9Gw_vz8_uFilI5D47IQSSNz5p98LaUqIzCYfdcZT7FN_E9kEz8lcYGe2KKnfz1dfWsb5YxDlgrrJshORRvb89zTpYtKwZ-kx5p9tOSQBfDo0kiBf8_lI0w2zWCqkGEQt5uyN5Qw5dGVjqkLlI-ancJQ3r7aPs6FIhHve5S3J" alt="Hampers Anyaman Sage" class="w-full h-full object-cover">
+              </div>
+              <div class="p-gutter-lg flex flex-col flex-1 gap-gutter-sm">
+                <header class="flex flex-col gap-gutter-xs">
+                  <span class="inline-flex self-start px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label text-label-md" data-design-text-token="label-md">Hampers &amp; Hadiah</span>
+                  <h3 class="font-title text-title-lg text-on-surface" data-design-text-token="title-lg">Hampers Anyaman Sage</h3>
+                </header>
+                <p class="font-body text-body-md text-on-surface-variant text-pretty flex-1" data-design-text-token="body-md">
+                  Rangkaian hampers anyaman bernuansa sage dengan pita linen dan kartu ucapan. Isi dan komposisinya dapat disesuaikan untuk syukuran maupun apresiasi.
+                </p>
+                <footer class="pt-gutter-sm border-t border-outline-variant/60 flex flex-col gap-gutter-sm">
+                  <span class="font-mono text-mono-md text-earthy-brown tabular-nums" data-design-text-token="mono-md">Rp 245.000</span>
+                  <a href="detail-produk.html" data-component-id="button-tertiary" data-component-type="button" data-component-variant="tertiary" class="w-full inline-flex items-center justify-center gap-gutter-xs px-gutter-md py-2 rounded-full bg-surface-container-low text-primary font-label text-label-lg transition-colors duration-state-change hover:bg-primary-container">
+                    <span data-design-text-token="label-lg">Lihat Detail</span>
+                    <span class="material-symbols-outlined text-[16px]" aria-hidden="true">arrow_forward</span>
+                  </a>
+                </footer>
+              </div>
+            </article>
+
+            <!-- Product Card 3 -->
+            <article data-category="Buket &amp; Hantaran" data-component-id="card-action" data-component-type="card" data-component-variant="action" class="product-card bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden flex flex-col h-full transition-shadow duration-state-change ease-state-change hover:shadow-[0_14px_30px_-24px_rgba(37,25,14,0.35)]">
+              <div class="aspect-square w-full bg-surface-container overflow-hidden">
+                <img src="https://lh3.googleusercontent.com/aida/ALJJyrB4xxz5VS1YUR9yj4MJc-WsZ7sLhvXMK3xSo8ht_VmREwuiEckmYkURb2zMI_SSE6M8qZI-AG5eZkMfUnP_0WX7S8rVnwBkcWp2y9GJnqk3gotG4YOT_-cj7NnFINN8gMoqC5-EYOd3K36b83_Vu6B7Cy-WlAc2SSBsX9K68clSAF4_588f8MrOL7Kvgx2vvj4X7njY1K9jSImWLrP47XFNIycqG1GXFTFG-JFE5gr4iiruTf7d8kmE9AN5m6O1" alt="Buket Kering Terracotta" class="w-full h-full object-cover">
+              </div>
+              <div class="p-gutter-lg flex flex-col flex-1 gap-gutter-sm">
+                <header class="flex flex-col gap-gutter-xs">
+                  <span class="inline-flex self-start px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label text-label-md" data-design-text-token="label-md">Buket &amp; Hantaran</span>
+                  <h3 class="font-title text-title-lg text-on-surface" data-design-text-token="title-lg">Buket Kering Terracotta</h3>
+                </header>
+                <p class="font-body text-body-md text-on-surface-variant text-pretty flex-1" data-design-text-token="body-md">
+                  Buket bunga kering bernuansa terracotta dengan balutan kertas bertekstur dan ikatan pita katun. Tahan lama dan pas untuk hadiah personal.
+                </p>
+                <footer class="pt-gutter-sm border-t border-outline-variant/60 flex flex-col gap-gutter-sm">
+                  <span class="font-mono text-mono-md text-earthy-brown tabular-nums" data-design-text-token="mono-md">Rp 165.000</span>
+                  <a href="detail-produk.html" data-component-id="button-tertiary" data-component-type="button" data-component-variant="tertiary" class="w-full inline-flex items-center justify-center gap-gutter-xs px-gutter-md py-2 rounded-full bg-surface-container-low text-primary font-label text-label-lg transition-colors duration-state-change hover:bg-primary-container">
+                    <span data-design-text-token="label-lg">Lihat Detail</span>
+                    <span class="material-symbols-outlined text-[16px]" aria-hidden="true">arrow_forward</span>
+                  </a>
+                </footer>
+              </div>
+            </article>
+
+            <!-- Product Card 4 -->
+            <article data-category="Handmade &amp; Kerajinan" data-component-id="card-action" data-component-type="card" data-component-variant="action" class="product-card bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden flex flex-col h-full transition-shadow duration-state-change ease-state-change hover:shadow-[0_14px_30px_-24px_rgba(37,25,14,0.35)]">
+              <div class="aspect-square w-full bg-surface-container overflow-hidden">
+                <img src="https://lh3.googleusercontent.com/aida/ALJJyrBUzUk_Hwh7PyWmCkRrwcO8TvpWvhgBgCit5mESyUOphPxFGOMH8VsdFHtKWapc9c7Q06y4JRt0efmSctzZpDu-Fn2VM5vSSq3MWpCxeOGwJhVEfanEMXn7AM9z08R6A6mP4CwdbdkcQbWS_rADgsrKFMC3Yxu6yzhC5OFwHWMtWIYprxMvgq7y7RwIqm7Wpr1agpe_V4ob66KunmcOU0CydYBv5VC-TWpbj397jIxWM-cELOZ3_0p9d9vpAPk" alt="Set Hantaran Makrame" class="w-full h-full object-cover">
+              </div>
+              <div class="p-gutter-lg flex flex-col flex-1 gap-gutter-sm">
+                <header class="flex flex-col gap-gutter-xs">
+                  <span class="inline-flex self-start px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label text-label-md" data-design-text-token="label-md">Handmade &amp; Kerajinan</span>
+                  <h3 class="font-title text-title-lg text-on-surface" data-design-text-token="title-lg">Set Hantaran Makrame</h3>
+                </header>
+                <p class="font-body text-body-md text-on-surface-variant text-pretty flex-1" data-design-text-token="body-md">
+                  Set wadah hantaran dengan detail makrame, pita sage, dan ornamen alami. Dapat disusun ulang sesuai tema acara lamaran atau perayaan.
+                </p>
+                <footer class="pt-gutter-sm border-t border-outline-variant/60 flex flex-col gap-gutter-sm">
+                  <span class="font-mono text-mono-md text-earthy-brown tabular-nums" data-design-text-token="mono-md">Rp 320.000</span>
+                  <a href="detail-produk.html" data-component-id="button-tertiary" data-component-type="button" data-component-variant="tertiary" class="w-full inline-flex items-center justify-center gap-gutter-xs px-gutter-md py-2 rounded-full bg-surface-container-low text-primary font-label text-label-lg transition-colors duration-state-change hover:bg-primary-container">
+                    <span data-design-text-token="label-lg">Lihat Detail</span>
+                    <span class="material-symbols-outlined text-[16px]" aria-hidden="true">arrow_forward</span>
+                  </a>
+                </footer>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. OUR STORY SECTION -->
+      <section id="cerita-kami" class="py-section-sm md:py-section-lg bg-surface-container-low border-y border-outline-variant">
+        <div class="max-w-7xl mx-auto px-page-margin grid grid-cols-1 lg:grid-cols-12 gap-gutter-xl items-center">
+          <div class="lg:col-span-5">
+            <div class="rounded-t-full rounded-b-xl overflow-hidden bg-soft-beige border border-outline-variant p-3">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrAspiqz_HWhfiXnvxyzBPmLe-dPK7z-W12yTKxjdKS1s3S3l4cWoPcrzb0r9CHTDBc5qGBF5xN6iSuPX6Yiz7iAXOIbQad7-fLizxdg9dvRkq5AU6-kbHyCe2-51dg8585owS-QT1aIYB8Qt_CtJesD0n2GejODbzSyZBJ55a_kZo4VLsq3g9wZKTl6g0XOT8_fQoHe0lfj0vfXd8hlCznhqqecsaDD1n7cqgWypsZkIVqFJAu6xl_TBFYQKQ" alt="Proses pengerjaan tangan dan penataan hadiah di studio GENarta Collection" class="w-full aspect-[3/4] object-cover rounded-t-full rounded-b-lg">
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 flex flex-col gap-gutter-lg lg:pl-gutter-xl">
+            <span class="font-label text-label-md text-primary uppercase tracking-wider" data-design-text-token="label-md">Cerita Kami</span>
+            <h2 class="font-display text-display-md-mobile md:text-display-md text-on-surface text-balance" data-design-text-token="display-md">
+              Lebih dari Sekadar Produk, Ada Cerita di Setiap Karya.
+            </h2>
+            <div class="flex flex-col gap-gutter-md max-w-prose">
+              <p class="font-body text-body-lg text-on-surface-variant text-pretty" data-design-text-token="body-lg">
+                GENarta Collection lahir dari kecintaan terhadap proses berkarya dengan tangan—mengolah tekstur alami, motif batik, serta detail dekoratif menjadi sesuatu yang terasa dekat dan personal.
+              </p>
+              <p class="font-body text-body-md text-on-surface-variant text-pretty" data-design-text-token="body-md">
+                Kami percaya bahwa hadiah maupun benda kerajinan terbaik adalah karya yang membawa kehangatan pembuatnya sekaligus mencerminkan perhatian dari pemberinya. Setiap rangkaian disusun dengan pertimbangan komposisi, warna, dan karakter momen yang ingin Anda rayakan.
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-gutter-md pt-gutter-sm border-t border-outline-variant">
+              <div class="flex flex-col gap-gutter-xs">
+                <span class="font-title text-title-md text-on-surface" data-design-text-token="title-md">Pengerjaan Tangan</span>
+                <span class="font-body text-body-md text-on-surface-variant" data-design-text-token="body-md">Setiap detail dirangkai dengan perhatian penuh.</span>
+              </div>
+              <div class="flex flex-col gap-gutter-xs">
+                <span class="font-title text-title-md text-on-surface" data-design-text-token="title-md">Nuansa Lokal</span>
+                <span class="font-body text-body-md text-on-surface-variant" data-design-text-token="body-md">Memadukan elemen batik, anyaman, dan estetika modern.</span>
+              </div>
+              <div class="flex flex-col gap-gutter-xs">
+                <span class="font-title text-title-md text-on-surface" data-design-text-token="title-md">Terbuka untuk Custom</span>
+                <span class="font-body text-body-md text-on-surface-variant" data-design-text-token="body-md">Disesuaikan dengan tema, warna, dan kebutuhan Anda.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. CUSTOM CREATION SECTION -->
+      <section class="py-section-sm md:py-section-lg">
+        <div class="max-w-7xl mx-auto px-page-margin">
+          <div class="bg-earthy-brown text-warm-cream rounded-xl overflow-hidden grid grid-cols-1 lg:grid-cols-12 items-center">
+            <div class="lg:col-span-6 p-gutter-xl md:p-12 flex flex-col gap-gutter-lg">
+              <span class="inline-flex self-start items-center gap-gutter-xs px-3.5 py-1.5 rounded-full bg-primary-container text-on-primary-container font-label text-label-md" data-design-text-token="label-md">
+                Layanan Kreasi Custom
+              </span>
+              <h2 class="font-display text-display-md-mobile md:text-display-md text-warm-cream text-balance" data-design-text-token="display-md">
+                Bayangkan, Ceritakan, Kami Bantu Wujudkan.
+              </h2>
+              <p class="font-body text-body-lg text-soft-beige text-pretty max-w-prose" data-design-text-token="body-lg">
+                Punya ide hadiah atau kerajinan sendiri? Diskusikan konsep, kebutuhan dan referensi Anda untuk mendapatkan kreasi yang sesuai.
+              </p>
+              <div class="flex flex-wrap items-center gap-gutter-md pt-gutter-xs">
+                <a href="konsultasi-custom.html" class="inline-flex items-center justify-center gap-gutter-sm px-gutter-xl py-3 rounded-full bg-warm-cream text-earthy-brown font-label text-label-lg transition-colors duration-state-change hover:bg-primary-container focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-warm-cream" data-design-text-token="label-lg">
+                  <span>Diskusikan Ide Custom</span>
+                  <span class="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+            <div class="lg:col-span-6 h-full p-4 lg:p-6">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrAU42Fz4WTkIJmixHdyezjOHhvzPceUQ0PQ5ZcZVP0AdMI9vwe127nfwNYOQlgas2PeJOgdoQTAGZXXSeW_WeWZM-5a9q_gMhwRuY1QBPhegyay2Dnt4QTFasExZuXwoNX4Bb08FKRtE9CGsJ7f0MGBr3p_uR7gZBcP6gmkpuzTVqOTyZ0CWDUm_LLI_EaROSAZYgBNNLfZ4xgJayAzCtZOnUzeqruSAPPGnILn9fM-7rRBepMOj3JiDPoSRQ" alt="Contoh rangkaian hadiah custom GENarta Collection dengan label personal, kain batik, dan kerajinan keramik" class="w-full aspect-[4/3] object-cover rounded-lg">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. INSPIRATION GALLERY -->
+      <section id="galeri" class="py-section-sm md:py-section-lg bg-surface-container-low border-y border-outline-variant">
+        <div class="max-w-7xl mx-auto px-page-margin">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-gutter-md mb-section-sm">
+            <div class="flex flex-col gap-gutter-sm">
+              <span class="font-label text-label-md text-primary uppercase tracking-wider" data-design-text-token="label-md">Galeri Inspirasi</span>
+              <h2 class="font-headline text-headline-lg-mobile md:text-headline-lg text-on-surface text-balance" data-design-text-token="headline-lg">
+                Ragam Karya &amp; Komposisi Visual
+              </h2>
+            </div>
+            <p class="font-body text-body-md text-on-surface-variant max-w-md text-pretty" data-design-text-token="body-md">
+              Eksplorasi perpaduan warna bumi, tekstur alami, dan tata letak hadiah dari berbagai kategori kreasi kami.
+            </p>
+          </div>
+
+          <!-- Asymmetric Masonry Gallery -->
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter-md">
+            <div class="md:col-span-4 flex flex-col gap-gutter-md">
+              <figure class="rounded-lg overflow-hidden bg-surface border border-outline-variant p-2">
+                <img src="https://lh3.googleusercontent.com/aida/ALJJyrCETY7npTJMYqt2JA1AFsoewwQzYP_4QeInPR-9HQX5Aj5Hldu8BZ6lpFtBQAbPSqiyPOmHk_W6tJkD1e1nMxMo3NLLxkSht6mfBZpu_dNMO0CxWnLiHd8jjH7YVDgq_UsxXPylwVmX1WuKzc9kA0NdQWZ4J3_Sl34SEPVPCl9V4Rs6lIDFLJXvDST7MP0v98Uh9LrtgbDRLHhla0gMMJpYeN9-h6741r3G420dUiMyyOT9zwDSKf2C7E-EOsm7Vg" alt="Objek dekoratif keramik handmade dengan daun kering" class="w-full aspect-[3/4] object-cover rounded">
+                <figcaption class="px-2 pt-2 pb-1 font-label text-label-md text-on-surface-variant" data-design-text-token="label-md">Objek Dekoratif &amp; Keramik</figcaption>
+              </figure>
+              <figure class="rounded-lg overflow-hidden bg-surface border border-outline-variant p-2">
+                <img src="https://lh3.googleusercontent.com/aida/ALJJyrCUt8Ve3Rmt4GMWTcwS4nD8RHICaDdBpagw3Y8S2JPuxrD7IIXau20pZYoXa_-ZPk2qzUlyaerRBLlspWVR2uJWmW48C-msmnpdEyvGEXE6MQV7uTkR-Ns-LGx0EzGqxjI4gGTmnjI8ttQ9REcbRD0Ub_C52oo-HCuR8KqxdZ4iYhSG8w6Dw7ZHU_QTTgQFXvmjFqz_fho2nZs6IoZ0E28PxYbPr5NvYlhSZBAMZhCyYlif9ndU1eQ22rU1" alt="Kreasi batik dan kotak decoupage" class="w-full aspect-square object-cover rounded">
+                <figcaption class="px-2 pt-2 pb-1 font-label text-label-md text-on-surface-variant" data-design-text-token="label-md">Kreasi Batik &amp; Decoupage</figcaption>
+              </figure>
+            </div>
+
+            <div class="md:col-span-4 flex flex-col gap-gutter-md">
+              <figure class="rounded-lg overflow-hidden bg-surface border border-outline-variant p-2">
+                <img src="https://lh3.googleusercontent.com/aida/ALJJyrAolDd5oIwIhzzjJAKnlQ7KCFkSKb_C8CA-js9yA1rtyzK0GJqUlmNt5UHfar-hGKcPF3_1Sn9WN7GdOjRjiYRIaSdPke7APzsqTmKAZ_74mwXqYbShkcsz-ulP2M9UWVqKq9K0Vejv6oHIxAxwPGlPesiMkGiZFIjTGY614AfNwU0eY5c-CJcHaQueqK-OkfhzPJUchCEhVCHgXzyeY-2gH1UgBSAGBocnZBc8PF7MQoD0Nb9KWGSqVS6LhA" alt="Rangkaian hampers artisan dengan pita sage" class="w-full aspect-square object-cover rounded">
+                <figcaption class="px-2 pt-2 pb-1 font-label text-label-md text-on-surface-variant" data-design-text-token="label-md">Hampers Terkurasi</figcaption>
+              </figure>
+              <figure class="rounded-lg overflow-hidden bg-surface border border-outline-variant p-2">
+                <img src="https://lh3.googleusercontent.com/aida/ALJJyrAspiqz_HWhfiXnvxyzBPmLe-dPK7z-W12yTKxjdKS1s3S3l4cWoPcrzb0r9CHTDBc5qGBF5xN6iSuPX6Yiz7iAXOIbQad7-fLizxdg9dvRkq5AU6-kbHyCe2-51dg8585owS-QT1aIYB8Qt_CtJesD0n2GejODbzSyZBJ55a_kZo4VLsq3g9wZKTl6g0XOT8_fQoHe0lfj0vfXd8hlCznhqqecsaDD1n7cqgWypsZkIVqFJAu6xl_TBFYQKQ" alt="Proses perangkaian hadiah custom" class="w-full aspect-[3/4] object-cover rounded">
+                <figcaption class="px-2 pt-2 pb-1 font-label text-label-md text-on-surface-variant" data-design-text-token="label-md">Rangkaian Hadiah Custom</figcaption>
+              </figure>
+            </div>
+
+            <div class="md:col-span-4 flex flex-col gap-gutter-md">
+              <figure class="rounded-lg overflow-hidden bg-surface border border-outline-variant p-2">
+                <img src="https://lh3.googleusercontent.com/aida/ALJJyrDpAQebbsZbVQcMZkZ0Vl_7hFQkikg57OURBmdh3USl9YotSagslSVc9LYXt4KYI73o0rpJJLxhYKmfvxfpNskPWgLhtmcnXS_wJuEJURvyzFQroFuUgPSgfksp1A-quw7zITbsnq3FE34gRwtFuKv12q68GAxphjd-kCRgGNxgD0I5eFq8ny-4l2JCXr0r-Lj_PjVsbVvUZhrcDxOSokqEsCMHoc4vb2QTS2OubgHdXZYZzXHHR_iCSe1Gn3o" alt="Kerajinan anyaman dan makrame" class="w-full aspect-[4/3] object-cover rounded">
+                <figcaption class="px-2 pt-2 pb-1 font-label text-label-md text-on-surface-variant" data-design-text-token="label-md">Kerajinan Tangan Alami</figcaption>
+              </figure>
+              <figure class="rounded-lg overflow-hidden bg-surface border border-outline-variant p-2">
+                <img src="https://lh3.googleusercontent.com/aida/ALJJyrB4xxz5VS1YUR9yj4MJc-WsZ7sLhvXMK3xSo8ht_VmREwuiEckmYkURb2zMI_SSE6M8qZI-AG5eZkMfUnP_0WX7S8rVnwBkcWp2y9GJnqk3gotG4YOT_-cj7NnFINN8gMoqC5-EYOd3K36b83_Vu6B7Cy-WlAc2SSBsX9K68clSAF4_588f8MrOL7Kvgx2vvj4X7njY1K9jSImWLrP47XFNIycqG1GXFTFG-JFE5gr4iiruTf7d8kmE9AN5m6O1" alt="Buket bunga kering bernuansa terracotta" class="w-full aspect-[4/5] object-cover rounded">
+                <figcaption class="px-2 pt-2 pb-1 font-label text-label-md text-on-surface-variant" data-design-text-token="label-md">Buket &amp; Hantaran</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. HOW TO ORDER -->
+      <section class="py-section-sm md:py-section-lg">
+        <div class="max-w-7xl mx-auto px-page-margin">
+          <div class="max-w-2xl mb-section-sm flex flex-col gap-gutter-sm">
+            <span class="font-label text-label-md text-primary uppercase tracking-wider" data-design-text-token="label-md">Cara Pemesanan</span>
+            <h2 class="font-headline text-headline-lg-mobile md:text-headline-lg text-on-surface text-balance" data-design-text-token="headline-lg">
+              Empat Langkah Mudah Memesan Karya
+            </h2>
+          </div>
+
+          <ol class="steps-list">
+            <li class="step-item">
+              <span class="step-number" aria-hidden="true">01</span>
+              <div>
+                <h3>Pilih koleksi atau konsep</h3>
+                <p>Jelajahi koleksi yang tersedia atau siapkan gambaran konsep hadiah yang ingin Anda wujudkan.</p>
+              </div>
+            </li>
+            <li class="step-item">
+              <span class="step-number" aria-hidden="true">02</span>
+              <div>
+                <h3>Kirim referensi dan kebutuhan</h3>
+                <p>Bagikan contoh gambar, nuansa warna, jumlah pesanan, serta tanggal momen Anda kepada kami.</p>
+              </div>
+            </li>
+            <li class="step-item">
+              <span class="step-number" aria-hidden="true">03</span>
+              <div>
+                <h3>Konsultasikan detail pesanan</h3>
+                <p>Kami bantu menyelaraskan pilihan material, kemasan, kartu ucapan, hingga estimasi biaya melalui WhatsApp.</p>
+              </div>
+            </li>
+            <li class="step-item">
+              <span class="step-number" aria-hidden="true">04</span>
+              <div>
+                <h3>Konfirmasi dan proses pesanan</h3>
+                <p>Setelah seluruh detail disepakati, karya Anda langsung kami proses dengan teliti hingga siap dikirim.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- 9. CALL TO ACTION -->
+      <section class="py-section-sm md:py-section-lg bg-surface-container-high border-t border-outline-variant">
+        <div class="max-w-4xl mx-auto px-page-margin text-center flex flex-col items-center gap-gutter-lg">
+          <h2 class="font-display text-display-md-mobile md:text-display-md text-on-surface text-balance" data-design-text-token="display-md">
+            Ada Ide Kreatif yang Ingin Diwujudkan?
+          </h2>
+          <p class="font-body text-body-lg text-on-surface-variant text-pretty max-w-prose" data-design-text-token="body-lg">
+            Hubungi GENarta Collection dan mulai diskusikan kreasi yang Anda inginkan.
+          </p>
+          <div class="flex flex-wrap items-center justify-center gap-gutter-md">
+            <!-- COMPONENT: button-with-icon -->
+            <a href="https://wa.me/6281357822559?text=Halo%20GENarta%20Collection%2C%20saya%20ingin%20berkonsultasi%20mengenai%20pesanan%20custom." target="_blank" rel="noopener noreferrer" data-component-id="button-with-icon" data-component-type="button" data-component-variant="with-icon" class="inline-flex items-center justify-center gap-gutter-sm px-gutter-xl py-3.5 rounded-full bg-secondary text-on-secondary font-label text-label-lg transition-colors duration-state-change ease-state-change hover:bg-earthy-brown focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2 focus-visible:ring-offset-surface-container-high">
+              <span class="material-symbols-outlined text-[20px]" aria-hidden="true">chat</span>
+              <span data-design-text-token="label-lg">Hubungi via WhatsApp</span>
+            </a>
+            <a href="konsultasi-custom.html" class="inline-flex items-center justify-center gap-gutter-sm px-gutter-xl py-3.5 rounded-full border border-earthy-brown text-earthy-brown font-label text-label-lg transition-colors duration-state-change hover:bg-surface" data-design-text-token="label-lg">
+              Isi Formulir Ide Custom
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 10. FOOTER -->
+    <footer id="kontak" class="bg-earthy-brown text-warm-cream pt-section-sm pb-24">
+      <div class="max-w-7xl mx-auto px-page-margin grid grid-cols-1 md:grid-cols-12 gap-gutter-xl">
+        <div class="md:col-span-5 flex flex-col gap-gutter-md">
+          <div class="flex items-center gap-gutter-sm">
+            <a href="index.html" class="flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded" aria-label="GENarta Collection — ke beranda">
+            <img src="assets/gambar/logo.png" alt="GENarta Collection" class="h-11 sm:h-14 w-auto max-w-[200px] object-contain mix-blend-multiply">
+            </a>
+            <span class="font-headline text-title-lg text-warm-cream" data-design-text-token="title-lg">GENarta Collection</span>
+          </div>
+          <p class="font-body text-body-md text-soft-beige max-w-sm text-pretty" data-design-text-token="body-md">
+            Studio kreasi handmade, batik, decoupage, hampers, buket, dan hantaran custom dengan sentuhan personal untuk setiap momen bermakna.
+          </p>
+        </div>
+
+        <div class="md:col-span-3 flex flex-col gap-gutter-sm">
+          <h3 class="font-title text-title-md text-warm-cream" data-design-text-token="title-md">Navigasi</h3>
+          <nav aria-label="Navigasi Footer" class="flex flex-col gap-gutter-xs">
+            <a href="#beranda" class="font-body text-body-md text-soft-beige hover:text-warm-cream transition-colors" data-design-text-token="body-md">Beranda</a>
+            <a href="#koleksi" class="font-body text-body-md text-soft-beige hover:text-warm-cream transition-colors" data-design-text-token="body-md">Koleksi</a>
+            <a href="#cerita-kami" class="font-body text-body-md text-soft-beige hover:text-warm-cream transition-colors" data-design-text-token="body-md">Cerita Kami</a>
+            <a href="#galeri" class="font-body text-body-md text-soft-beige hover:text-warm-cream transition-colors" data-design-text-token="body-md">Galeri</a>
+            <a href="konsultasi-custom.html" class="font-body text-body-md text-soft-beige hover:text-warm-cream transition-colors" data-design-text-token="body-md">Konsultasi Custom</a>
+          </nav>
+        </div>
+
+        <div class="md:col-span-4 flex flex-col gap-gutter-sm">
+          <h3 class="font-title text-title-md text-warm-cream" data-design-text-token="title-md">Kontak &amp; Studio</h3>
+          <ul class="flex flex-col gap-gutter-sm font-body text-body-md text-soft-beige">
+            <li class="flex items-center gap-gutter-sm">
+              <svg class="w-[18px] h-[18px] text-terracotta shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              <a href="https://wa.me/6281357822559" target="_blank" rel="noopener noreferrer" class="font-body text-body-md text-soft-beige hover:text-warm-cream hover:underline transition-colors" data-design-text-token="body-md">+62 813-5782-2559</a>
+            </li>
+            <li class="flex items-center gap-gutter-sm">
+              <span class="material-symbols-outlined text-[18px] text-terracotta" aria-hidden="true">photo_camera</span>
+              <a href="https://www.instagram.com/genarta_collection/" target="_blank" rel="noopener noreferrer" class="font-body text-body-md text-soft-beige hover:text-warm-cream hover:underline transition-colors" data-design-text-token="body-md">@genarta_collection</a>
+            </li>
+            <li class="flex items-start gap-gutter-sm">
+              <span class="material-symbols-outlined text-[18px] text-terracotta mt-0.5" aria-hidden="true">location_on</span>
+              <a href="https://maps.app.goo.gl/kMcTx1sJ7NK1MqSF8" target="_blank" rel="noopener noreferrer" class="font-body text-body-md text-soft-beige hover:text-warm-cream hover:underline transition-colors" data-design-text-token="body-md">Putat Jaya C Timur 3/3, Surabaya, Indonesia 60255</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-page-margin mt-gutter-xl pt-gutter-lg border-t border-soft-beige/20 flex flex-col sm:flex-row items-center justify-center gap-gutter-sm">
+        <span class="font-label text-label-md text-soft-beige" data-design-text-token="label-md">© GENarta Collection. Seluruh hak cipta dilindungi.</span>
+      </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6281357822559?text=Halo%20GENarta%20Collection%2C%20saya%20ingin%20bertanya%20tentang%20koleksi%20dan%20pesanan%20custom." target="_blank" rel="noopener noreferrer" aria-label="Konsultasi via WhatsApp" class="fab-wa fixed bottom-6 right-6 z-40 inline-flex items-center gap-gutter-sm px-gutter-lg py-3.5 rounded-full bg-secondary text-on-secondary font-label text-label-lg shadow-lg transition-transform duration-state-change hover:scale-105 hover:bg-earthy-brown focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary">
+      <span class="material-symbols-outlined text-[20px]" aria-hidden="true">chat</span>
+      <span class="hidden sm:inline" data-design-text-token="label-lg">Chat WhatsApp</span>
+    </a>
+
+  </div>
+
+
+
+  <script src="assets/js/main.js" defer></script>
+</body></html>
